@@ -1,0 +1,27 @@
+<form action="javascript:void(0)">
+    <input type="file" class="J_file">
+    <button class="J_submit">提交</button>
+    <span class="J_file"></span>
+</form>
+
+
+<script src="public/js/jquery-1.8.3.min.js"></script>
+<script src="public/js/upload.js"></script>
+
+<script>
+$('.J_submit').uploadFile({
+    file:'.J_file',
+    url:'/web/index.php',
+    process:function (loaded,total) {
+
+    },
+    error:function () {
+        
+    },
+    success:function () {
+        
+    }
+});
+
+
+</script>
